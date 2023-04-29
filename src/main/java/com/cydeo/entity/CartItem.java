@@ -12,10 +12,9 @@ import javax.persistence.Table;
 @NoArgsConstructor
 @Getter
 @Setter
-@Table(name = "cart_item")
 public class CartItem extends BaseEntity{
 
-    private int quantity;
+    private Integer quantity;
 
     @ManyToOne
     private Cart cart;
